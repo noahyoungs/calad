@@ -6,7 +6,7 @@
 - Authenticated GitHub account and repository owner: `noahyoungs`.
 - Original repository: private, not archived; default branch `main` at `130ba5430f232f1945afa40ff9109b3c88344643` when reviewed. Clean checkout; fetched remote branches and confirmed synchronization.
 - Noah selected MIT for original contributions and approved preparing a separate clean-history `noahyoungs/calad` repository while retaining the original private repository.
-- **Not cleared for publication.** Token revocation and third-party/template/asset provenance remain unresolved. Do not change original visibility, rewrite its history, deploy, or restart the service.
+- **Not cleared for publication.** Token revocation, custom asset ownership, and the final UI provenance mapping remain unresolved. Do not change original visibility, rewrite its history, deploy, or restart the service.
 - Shutdown reason intentionally omitted at Noah's request. Main product development dates are February–July 2025; later security and closure maintenance is distinguished in the README.
 
 ## Audit scope and method
@@ -27,7 +27,7 @@ Local ignored `.env.local`, service-account JSON, build output, dependencies, an
 | Personal calendar identity and account UUID | `app/api/test/fetch/route.ts` | Legacy debug route targeted a real account/calendar through privileged helpers. Removed from candidate. Original identifiers persist in private history only. Route was never invoked during review. |
 | Author contact metadata | Historical commit authors | Personal author email exists in history. A fresh initial commit should use the verified GitHub noreply identity. |
 | Contact addresses and examples | Contact route/docs, product legal text/signatures/vCard, prompts; historical FAQ files | Product/owner business contact addresses and illustrative prompt addresses identified; no actual message corpus found. Historical third-party FAQ contacts support template provenance concerns. Clean history excludes deleted historical files. |
-| Third-party UI provenance | Historical `components/landing/hero/app-screenshot.tsx` references HeroUI Pro; current landing/pricing/settings components require ownership confirmation | No blanket right to republish paid templates inferred. Await owner clarification, then retain authorized material or replace/exclude it. |
+| Third-party UI provenance | Historical `components/landing/hero/app-screenshot.tsx` references HeroUI Pro; current landing/pricing/settings components require ownership confirmation | Owner supplied the v2 FAQ explicitly permitting qualifying open-source applications and selected a full-application release with Pro material excluded from MIT. LICENSE and THIRD_PARTY_NOTICES.md implement that scope; precise UI provenance mapping remains incomplete. |
 | Brand/artwork provenance | `public/`, app icons, historical binary versions, brand SVGs/Lottie JSON | Visual review found branding, icons, email graphics, and a starter image; no private calendar screenshots identified. Custom asset rights and third-party brand sources still need confirmation. |
 | Starter/component notices | Initial Next.js/Supabase starter README; historical shadcn-style UI | Preserved upstream MIT notices under `docs/licenses/`; project license does not override upstream rights. |
 | Dependency security | Locked dependency installation | `npm audit` reported 52 advisories: 4 low, 16 moderate, 28 high, 4 critical. Critical package groups include `next`, `form-data`, `fast-xml-parser`, and `tar`. No live service should be revived from this snapshot without remediation. No broad dependency upgrades performed. |
@@ -36,7 +36,7 @@ Local ignored `.env.local`, service-account JSON, build output, dependencies, an
 ## Candidate changes
 
 - New source-grounded README, architecture diagram, honest closure/setup limitations, and variable reference.
-- MIT license selected by owner; upstream license texts and a provenance notice.
+- MIT license selected by owner for original contributions, with an explicit HeroUI Pro v2 exclusion; upstream license texts and a provenance notice.
 - Consolidated placeholder-only environment examples. Existing private environments were preserved.
 - Removed token-bearing editor configuration and personal debug endpoint.
 - Removed the unusable `test:webhook` script (its referenced script was absent), including its development-guide entry.
@@ -56,9 +56,18 @@ Local ignored `.env.local`, service-account JSON, build output, dependencies, an
 ## Concrete completion plan
 
 1. Confirm Supabase PAT revocation. Assess its previous account scope before replacing any dependent integration.
-2. Establish custom asset ownership and whether HeroUI Pro templates were used. Resolve restrictions before public export, including any current derivatives.
+2. Confirm custom asset ownership and finish the Pro-derived UI inventory. Noah selected full-application publication using the explicit open-source permission in the v2 pricing FAQ, with HeroUI Pro material excluded from MIT. The LICENSE exception follows Pro-derived portions regardless of file path; no wholesale replacement or separate permission is presumed necessary.
 3. Review the clean-history source snapshot and its fresh scan, setup checks, notices, and remaining dependency limitations.
 4. Push only a fresh, sanitized history to the approved separate `noahyoungs/calad` repository. Keep the original private, with no force push or deletion. Do not push this preparation branch to the Vercel-linked original: historical GitHub statuses/deployments show automatic preview/production deployments.
 5. Once review passes, make only the separate repository public, verify its contents/visibility, and mark it archived/read-only. No deployment or service reactivation accompanies publication.
 
 Until those conditions are satisfied, no public repository URL or successful archival outcome should be claimed.
+
+## Current handoff
+
+Source preparation is committed locally on `codex/open-source-preparation`.
+A fresh one-commit candidate was prepared under `.git/open-source-candidate/`
+and passed the extended secret scan with zero findings. No GitHub repository
+was created, no branch was pushed to the Vercel-linked original, no visibility
+was changed, and no archival or deployment was performed. Publication is waiting
+on asset provenance, final UI source identification, and token revocation. The owner has selected the full-application release with a HeroUI Pro license exception.

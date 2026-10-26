@@ -98,6 +98,6 @@ Supabase's checked-in local configuration is historical: its seed file is absent
 
 ## License and provenance
 
-Noah Youngs selected the MIT license for original project contributions; see [LICENSE](LICENSE). Third-party material retains its own terms and is not relicensed by that choice. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Original project contributions are MIT-licensed **with an explicit exception for HeroUI Pro (v2) components and derived portions**; see [LICENSE](LICENSE). Pro material retains the [HeroUI Pro v2 terms](https://v2.heroui.pro/license). The [v2 FAQ](https://v2.heroui.pro/pricing) permits use in open-source applications subject to its restrictions on repackaging components. The release is prepared as a calendar application, not as a component collection. The repository has mixed license terms and must not be described as entirely MIT-licensed. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the UI provenance inventory and other third-party notices.
 
-**Release preparation is incomplete:** historical credentials, personal identifiers, and asset/template provenance must be resolved before this private repository or a reviewed clean-history copy is published. See [the release review](docs/OPEN_SOURCE_REVIEW.md).
+**Release preparation is incomplete:** token revocation, custom asset rights, and the final UI provenance mapping must be resolved before this private repository or a reviewed clean-history copy is published. See [the release review](docs/OPEN_SOURCE_REVIEW.md).

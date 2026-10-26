@@ -1,3 +1,30 @@
+Licensing scope
+===============
+
+The MIT license below applies to Noah Youngs' original contributions to cal.ad,
+except for the excluded third-party material described here. It does not grant
+rights in material owned by others or replace their license terms.
+
+HeroUI Pro (v2) components, templates, design assets, and portions derived from
+or adapting them are EXCLUDED from the MIT grant below. Those portions remain
+subject to the HeroUI Pro (v2) license and NextUI Inc.'s rights, including when
+they are modified, renamed, or embedded in application files. Their inclusion
+in this application does not make them MIT-licensed or grant a standalone right
+to extract, redistribute, or repackage them. See:
+https://v2.heroui.pro/license
+
+This exclusion does not apply merely because code imports the open-source
+@heroui/react library. That library and other third-party dependencies retain
+their respective licenses. Other upstream code, logos, and artwork likewise
+retain their applicable terms. See THIRD_PARTY_NOTICES.md for provenance,
+review boundaries, and the distinction between the library and Pro templates.
+
+In the MIT text below, "Software" refers only to the original contributions
+covered by this grant, not the excluded material. The repository as a whole
+must not be represented as exclusively MIT-licensed.
+
+---
+
 MIT License
 
 Copyright (c) 2025-2026 Noah Youngs
