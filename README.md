@@ -2,7 +2,7 @@
 
 A discontinued calendar assistant that turned chat messages, forwarded emails, images, and PDFs into Google Calendar actions.
 
-**Status:** developed February–July 2025; discontinued and closed to new sign-ups. This repository preserves the implementation for study and portfolio reference. The hosted product is not offered as an active service. Later maintenance commits include dependency security fixes and the closure of registration and purchasing. The closure behavior remains in this source.
+**Status:** developed February–July 2025; discontinued and closed to new sign-ups. This repository is a read-only archive preserving the implementation for study and portfolio reference. The hosted product is not offered as an active service. Later maintenance commits include dependency security fixes and the closure of registration and purchasing. The closure behavior remains in this source.
 
 ## What it did
 

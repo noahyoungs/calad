@@ -63,23 +63,27 @@ Local ignored `.env.local`, service-account JSON, build output, dependencies, an
 
 Source publication is authorized after the documented review and final candidate checks. Public visibility and archival must be verified before reporting completion.
 
-## Current handoff
+## Release record
 
-The sanitized source candidate has been pushed to
-https://github.com/noahyoungs/calad as a **private**, unarchived repository.
-Its history starts from a fresh sanitized snapshot and contains only reviewed
-preparation commits, not the original private history. The candidate matched
-the reviewed source tree before pushing, and an extended scan of its complete
-history found zero credential findings.
+The reviewed clean-history source was published on 2026-10-26 at
+https://github.com/noahyoungs/calad. Repository disposition: public source,
+read-only archive. The original private history was not published or rewritten.
 
-The original `noahyoungs/calendar-ai` repository remains private and its remote
-branches have not been changed. No branch was pushed to that Vercel-linked
-repository. No deployment or service reactivation was performed.
+The final application build passed from release commit
+`099b386454c341e61845b01dc43c5ad70454c833`, using an isolated export and synthetic
+configuration. Its complete clean history passed the extended credential scan
+with zero findings. This release-record follow-up changes documentation only.
+The reviewed source tree matched the preparation checkout before publication.
+There is no configured CI workflow or automated integration suite to claim as
+passing; build/type validation and local smoke checks are described above.
 
-The last credential blocker was resolved on 2026-10-26: Noah deleted the
-matching MCP token, and its absence was verified in Supabase's account token list.
-Noah confirmed creation of all custom cal.ad artwork on the same date and selected
-full-application publication with the HeroUI Pro exception. The reviewed source
-is ready for public visibility and read-only archival once final checks pass.
-UI provenance is documented with confidence levels in HEROUI_PROVENANCE.md;
-no exact-match certainty is invented for the unresolved portions.
+Noah deleted the matching historical MCP token on 2026-10-26; its absence was
+verified in Supabase's token list, with the two unrelated CLI tokens remaining.
+He confirmed creation of all custom cal.ad artwork and selected the full-app
+release with the HeroUI Pro exception. Attribution uncertainty remains explicitly
+bounded in HEROUI_PROVENANCE.md rather than being presented as exact certainty.
+
+The original `noahyoungs/calendar-ai` repository remains private, with its remote
+main unchanged at `130ba5430f232f1945afa40ff9109b3c88344643`. No branch was pushed
+to that Vercel-linked repository. No deployment, service reactivation, database
+migration, email delivery, or calendar operation accompanied publication.
