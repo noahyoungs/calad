@@ -25,28 +25,16 @@ approval from HeroUI or a claim that Pro material is MIT-licensed.
 
 ### Source identification and review boundaries
 
-Git history identifies `components/landing/hero/app-screenshot.tsx` as containing
-a HeroUI Pro reference; that historical file is absent from the clean export.
-Current UI provenance review includes:
-
-| Source area | Review scope |
-| --- | --- |
-| `components/landing/` | Marketing, pricing, FAQ, and navigation layouts |
-| `components/settings/` | Settings layouts and controls |
-| `components/chat/`, `components/chat.tsx` | Chat layout, input, message, and sidebar components |
-| Other `components/` and `app/**/*.tsx` files | UI compositions and any Pro-derived portions carried into application pages |
-
-This is a conservative inventory of locations to check, not an assertion that
-every file or every line there was copied from Pro. Imports from `@heroui/react`
-alone do not establish Pro provenance. Git does not record a reliable exact
-mapping of all template-derived portions; owner confirmation is still needed
-to complete that mapping. Until then, do not infer that any Pro-derived portion
-in these or other files falls under MIT. The exception follows the material
-regardless of its path. Original backend code is not excluded merely because
-it is used by the UI.
+The evidence-based file inventory is in [docs/HEROUI_PROVENANCE.md](docs/HEROUI_PROVENANCE.md).
+It identifies strong Settings Layout, theme/plan selector, marketing, and pricing
+lineages, and separates probable or unresolved chat/helper matches. The owner
+could not recall exact imports; this inventory was reconstructed from public
+previews and Git rather than asking the owner to supply that mapping. The Pro
+exception follows the material regardless of its path or confidence label.
 
 The free `@heroui/react` library is separate from HeroUI Pro templates and
-retains its own package license. This notice does not impose Pro restrictions
+is MIT-licensed at the pinned 2.7.8 version; its notice is retained in
+`docs/licenses/heroui-MIT.txt`. This notice does not impose Pro restrictions
 on that library or on unrelated permissively licensed code.
 
 ## Starter and other UI code
