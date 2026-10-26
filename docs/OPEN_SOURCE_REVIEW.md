@@ -6,7 +6,7 @@
 - Authenticated GitHub account and repository owner: `noahyoungs`.
 - Original repository: private, not archived; default branch `main` at `130ba5430f232f1945afa40ff9109b3c88344643` when reviewed. Clean checkout; fetched remote branches and confirmed synchronization.
 - Noah selected MIT for original contributions and approved preparing a separate clean-history `noahyoungs/calad` repository while retaining the original private repository.
-- **Not cleared for publication.** Token revocation remains unresolved; Noah confirmed he created all custom cal.ad artwork. Do not change original visibility, rewrite its history, deploy, or restart the service.
+- **Cleared for source publication after review.** Noah revoked the historical Supabase token and confirmed he created all custom cal.ad artwork. Do not change original visibility, rewrite its history, deploy, or restart the service.
 - Shutdown reason intentionally omitted at Noah's request. Main product development dates are February–July 2025; later security and closure maintenance is distinguished in the README.
 
 ## Audit scope and method
@@ -23,11 +23,11 @@ Local ignored `.env.local`, service-account JSON, build output, dependencies, an
 
 | Category | Path / scope | Result and required action |
 | --- | --- | --- |
-| Supabase personal access token | `.cursor/mcp.json`; historical commits including `b722d311fa53` and `00a9869284b5` | Confirmed credential. Removed the file from candidate and ignored it. Owner must revoke token; no account-wide rotation attempted. Never publish original history. |
+| Supabase personal access token | `.cursor/mcp.json`; historical commits including `b722d311fa53` and `00a9869284b5` | Confirmed credential. Removed the file from candidate and ignored it. Owner revoked the matching MCP token on 2026-10-26; browser verification showed it absent while both CLI token entries remained. No account-wide rotation attempted. Never publish original history. |
 | Personal calendar identity and account UUID | `app/api/test/fetch/route.ts` | Legacy debug route targeted a real account/calendar through privileged helpers. Removed from candidate. Original identifiers persist in private history only. Route was never invoked during review. |
 | Author contact metadata | Historical commit authors | Personal author email exists in history. A fresh initial commit should use the verified GitHub noreply identity. |
 | Contact addresses and examples | Contact route/docs, product legal text/signatures/vCard, prompts; historical FAQ files | Product/owner business contact addresses and illustrative prompt addresses identified; no actual message corpus found. Historical third-party FAQ contacts support template provenance concerns. Clean history excludes deleted historical files. |
-| Third-party UI provenance | Historical `components/landing/hero/app-screenshot.tsx` references HeroUI Pro; current landing/pricing/settings components require ownership confirmation | Owner supplied the v2 FAQ explicitly permitting qualifying open-source applications and selected a full-application release with Pro material excluded from MIT. LICENSE and THIRD_PARTY_NOTICES.md implement that scope; the public-preview/Git inventory in docs/HEROUI_PROVENANCE.md identifies strong matches and records remaining attribution uncertainty. |
+| Third-party UI provenance | Historical `components/landing/hero/app-screenshot.tsx` references HeroUI Pro; current template lineages recorded in docs/HEROUI_PROVENANCE.md | Owner supplied the v2 FAQ explicitly permitting qualifying open-source applications and selected a full-application release with Pro material excluded from MIT. LICENSE and THIRD_PARTY_NOTICES.md implement that scope; the public-preview/Git inventory in docs/HEROUI_PROVENANCE.md identifies strong matches and records remaining attribution uncertainty. |
 | Brand/artwork provenance | `public/`, app icons, historical binary versions, brand SVGs/Lottie JSON | Visual review found branding, icons, email graphics, and a starter image; no private calendar screenshots identified. Noah confirmed on 2026-10-26 that he created all custom cal.ad artwork. Third-party brand assets retain their own rights. |
 | Starter/component notices | Initial Next.js/Supabase starter README; historical shadcn-style UI | Preserved upstream MIT notices under `docs/licenses/`; project license does not override upstream rights. |
 | Dependency security | Locked dependency installation | `npm audit` reported 52 advisories: 4 low, 16 moderate, 28 high, 4 critical. Critical package groups include `next`, `form-data`, `fast-xml-parser`, and `tar`. No live service should be revived from this snapshot without remediation. No broad dependency upgrades performed. |
@@ -53,15 +53,15 @@ Local ignored `.env.local`, service-account JSON, build output, dependencies, an
 - No production OAuth, AI, Calendar, Mailgun, Redis, billing, database, or storage operations were tested.
 - No product demo was recorded: the preserved authentication/onboarding closure prevents a legitimate fresh-account walkthrough. Existing external demo embeds were not assumed synthetic or safe to republish.
 
-## Concrete completion plan
+## Release controls
 
-1. Confirm Supabase PAT revocation. Assess its previous account scope before replacing any dependent integration.
+1. Supabase PAT revocation confirmed on 2026-10-26: owner deleted the matching MCP token; subsequent browser inspection showed only the two unrelated CLI tokens remaining. No replacement token was generated.
 2. Custom asset ownership confirmed by Noah on 2026-10-26. The Pro-derived UI inventory has been reconstructed from public previews and Git in docs/HEROUI_PROVENANCE.md, with confidence levels instead of invented certainty. Noah selected full-application publication using the explicit open-source permission in the v2 pricing FAQ, with HeroUI Pro material excluded from MIT. The LICENSE exception follows Pro-derived portions regardless of file path; no wholesale replacement or separate permission is presumed necessary.
 3. Review the clean-history source snapshot and its fresh scan, setup checks, notices, and remaining dependency limitations.
 4. Push only a fresh, sanitized history to the approved separate `noahyoungs/calad` repository. Keep the original private, with no force push or deletion. Do not push this preparation branch to the Vercel-linked original: historical GitHub statuses/deployments show automatic preview/production deployments.
 5. Once review passes, make only the separate repository public, verify its contents/visibility, and mark it archived/read-only. No deployment or service reactivation accompanies publication.
 
-Until those conditions are satisfied, no public repository URL or successful archival outcome should be claimed.
+Source publication is authorized after the documented review and final candidate checks. Public visibility and archival must be verified before reporting completion.
 
 ## Current handoff
 
@@ -76,8 +76,10 @@ The original `noahyoungs/calendar-ai` repository remains private and its remote
 branches have not been changed. No branch was pushed to that Vercel-linked
 repository. No deployment or service reactivation was performed.
 
-Publication and archival are pending revocation of the historical Supabase
-token. Noah confirmed creation of all custom cal.ad artwork on 2026-10-26. Noah has selected full-application
-publication with the HeroUI Pro exception. UI provenance is documented with
-confidence levels in HEROUI_PROVENANCE.md; no exact-match certainty is invented
-for the unresolved portions.
+The last credential blocker was resolved on 2026-10-26: Noah deleted the
+matching MCP token, and its absence was verified in Supabase's account token list.
+Noah confirmed creation of all custom cal.ad artwork on the same date and selected
+full-application publication with the HeroUI Pro exception. The reviewed source
+is ready for public visibility and read-only archival once final checks pass.
+UI provenance is documented with confidence levels in HEROUI_PROVENANCE.md;
+no exact-match certainty is invented for the unresolved portions.
