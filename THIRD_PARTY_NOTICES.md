@@ -49,11 +49,11 @@ applicable to copied material; the HeroUI Pro exception does not supersede them.
 
 ## Images, artwork, and brand assets
 
-Ownership and redistribution rights for custom files under `public/` (including
-logos, the avatar, email graphics, and Open Graph images) and application icons
-still require owner confirmation. Google and Supabase brand graphics retain
+On 2026-10-26 Noah confirmed that he created all custom cal.ad artwork, including
+the logos, avatar, icons, and email graphics, for the requested source release.
+Google and Supabase brand graphics remain distinct third-party assets and retain
 their owners' rights. Project MIT licensing does not grant third-party trademark
-rights or establish ownership of artwork.
+rights.
 
 ## Dependencies
 

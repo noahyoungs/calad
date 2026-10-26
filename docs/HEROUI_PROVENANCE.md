@@ -79,5 +79,5 @@ Noah selected a full-application source release with original contributions
 under MIT and Pro-derived material excluded from that grant. The v2 FAQ supports
 qualifying open-source applications. This inventory does not require replacing
 those components or obtaining a new blanket permission merely because they
-were identified. Custom cal.ad artwork ownership and the historical Supabase
-PAT's revocation remain separate unresolved release facts.
+were identified. Noah confirmed ownership of all custom cal.ad artwork on 2026-10-26. Revocation
+of the historical Supabase PAT remains the unresolved release fact.

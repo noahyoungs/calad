@@ -6,7 +6,7 @@
 - Authenticated GitHub account and repository owner: `noahyoungs`.
 - Original repository: private, not archived; default branch `main` at `130ba5430f232f1945afa40ff9109b3c88344643` when reviewed. Clean checkout; fetched remote branches and confirmed synchronization.
 - Noah selected MIT for original contributions and approved preparing a separate clean-history `noahyoungs/calad` repository while retaining the original private repository.
-- **Not cleared for publication.** Token revocation and custom asset ownership remain unresolved. Do not change original visibility, rewrite its history, deploy, or restart the service.
+- **Not cleared for publication.** Token revocation remains unresolved; Noah confirmed he created all custom cal.ad artwork. Do not change original visibility, rewrite its history, deploy, or restart the service.
 - Shutdown reason intentionally omitted at Noah's request. Main product development dates are February–July 2025; later security and closure maintenance is distinguished in the README.
 
 ## Audit scope and method
@@ -28,7 +28,7 @@ Local ignored `.env.local`, service-account JSON, build output, dependencies, an
 | Author contact metadata | Historical commit authors | Personal author email exists in history. A fresh initial commit should use the verified GitHub noreply identity. |
 | Contact addresses and examples | Contact route/docs, product legal text/signatures/vCard, prompts; historical FAQ files | Product/owner business contact addresses and illustrative prompt addresses identified; no actual message corpus found. Historical third-party FAQ contacts support template provenance concerns. Clean history excludes deleted historical files. |
 | Third-party UI provenance | Historical `components/landing/hero/app-screenshot.tsx` references HeroUI Pro; current landing/pricing/settings components require ownership confirmation | Owner supplied the v2 FAQ explicitly permitting qualifying open-source applications and selected a full-application release with Pro material excluded from MIT. LICENSE and THIRD_PARTY_NOTICES.md implement that scope; the public-preview/Git inventory in docs/HEROUI_PROVENANCE.md identifies strong matches and records remaining attribution uncertainty. |
-| Brand/artwork provenance | `public/`, app icons, historical binary versions, brand SVGs/Lottie JSON | Visual review found branding, icons, email graphics, and a starter image; no private calendar screenshots identified. Custom asset rights and third-party brand sources still need confirmation. |
+| Brand/artwork provenance | `public/`, app icons, historical binary versions, brand SVGs/Lottie JSON | Visual review found branding, icons, email graphics, and a starter image; no private calendar screenshots identified. Noah confirmed on 2026-10-26 that he created all custom cal.ad artwork. Third-party brand assets retain their own rights. |
 | Starter/component notices | Initial Next.js/Supabase starter README; historical shadcn-style UI | Preserved upstream MIT notices under `docs/licenses/`; project license does not override upstream rights. |
 | Dependency security | Locked dependency installation | `npm audit` reported 52 advisories: 4 low, 16 moderate, 28 high, 4 critical. Critical package groups include `next`, `form-data`, `fast-xml-parser`, and `tar`. No live service should be revived from this snapshot without remediation. No broad dependency upgrades performed. |
 | Dependency licensing | Lockfile and isolated install | Inventory in `docs/DEPENDENCY_LICENSES.json`; includes platform-optional packages. This is package metadata, not legal clearance for copied templates or artwork. Dependencies are not vendored. |
@@ -56,7 +56,7 @@ Local ignored `.env.local`, service-account JSON, build output, dependencies, an
 ## Concrete completion plan
 
 1. Confirm Supabase PAT revocation. Assess its previous account scope before replacing any dependent integration.
-2. Confirm custom asset ownership. The Pro-derived UI inventory has been reconstructed from public previews and Git in docs/HEROUI_PROVENANCE.md, with confidence levels instead of invented certainty. Noah selected full-application publication using the explicit open-source permission in the v2 pricing FAQ, with HeroUI Pro material excluded from MIT. The LICENSE exception follows Pro-derived portions regardless of file path; no wholesale replacement or separate permission is presumed necessary.
+2. Custom asset ownership confirmed by Noah on 2026-10-26. The Pro-derived UI inventory has been reconstructed from public previews and Git in docs/HEROUI_PROVENANCE.md, with confidence levels instead of invented certainty. Noah selected full-application publication using the explicit open-source permission in the v2 pricing FAQ, with HeroUI Pro material excluded from MIT. The LICENSE exception follows Pro-derived portions regardless of file path; no wholesale replacement or separate permission is presumed necessary.
 3. Review the clean-history source snapshot and its fresh scan, setup checks, notices, and remaining dependency limitations.
 4. Push only a fresh, sanitized history to the approved separate `noahyoungs/calad` repository. Keep the original private, with no force push or deletion. Do not push this preparation branch to the Vercel-linked original: historical GitHub statuses/deployments show automatic preview/production deployments.
 5. Once review passes, make only the separate repository public, verify its contents/visibility, and mark it archived/read-only. No deployment or service reactivation accompanies publication.
@@ -76,8 +76,8 @@ The original `noahyoungs/calendar-ai` repository remains private and its remote
 branches have not been changed. No branch was pushed to that Vercel-linked
 repository. No deployment or service reactivation was performed.
 
-Publication and archival are pending confirmation of custom artwork rights and
-revocation of the historical Supabase token. Noah has selected full-application
+Publication and archival are pending revocation of the historical Supabase
+token. Noah confirmed creation of all custom cal.ad artwork on 2026-10-26. Noah has selected full-application
 publication with the HeroUI Pro exception. UI provenance is documented with
 confidence levels in HEROUI_PROVENANCE.md; no exact-match certainty is invented
 for the unresolved portions.
