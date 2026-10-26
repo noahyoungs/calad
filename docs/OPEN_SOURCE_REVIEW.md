@@ -65,9 +65,19 @@ Until those conditions are satisfied, no public repository URL or successful arc
 
 ## Current handoff
 
-Source preparation is committed locally on `codex/open-source-preparation`.
-A fresh one-commit candidate was prepared under `.git/open-source-candidate/`
-and passed the extended secret scan with zero findings. No GitHub repository
-was created, no branch was pushed to the Vercel-linked original, no visibility
-was changed, and no archival or deployment was performed. Publication is waiting
-on asset provenance and token revocation. The owner has selected the full-application release with a HeroUI Pro license exception.
+The sanitized source candidate has been pushed to
+https://github.com/noahyoungs/calad as a **private**, unarchived repository.
+Its history starts from a fresh sanitized snapshot and contains only reviewed
+preparation commits, not the original private history. The candidate matched
+the reviewed source tree before pushing, and an extended scan of its complete
+history found zero credential findings.
+
+The original `noahyoungs/calendar-ai` repository remains private and its remote
+branches have not been changed. No branch was pushed to that Vercel-linked
+repository. No deployment or service reactivation was performed.
+
+Publication and archival are pending confirmation of custom artwork rights and
+revocation of the historical Supabase token. Noah has selected full-application
+publication with the HeroUI Pro exception. UI provenance is documented with
+confidence levels in HEROUI_PROVENANCE.md; no exact-match certainty is invented
+for the unresolved portions.
