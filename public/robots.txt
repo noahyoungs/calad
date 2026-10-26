@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /plus-upgrade
+Allow: /contact
+Allow: /legal/privacy-policy
+Allow: /legal/terms-of-service
+
+Disallow: /app/
+Disallow: /api/
+Disallow: /auth/
+Disallow: /settings/
+Disallow: /(auth-pages)/
+
+Sitemap: https://cal.ad/sitemap.xml

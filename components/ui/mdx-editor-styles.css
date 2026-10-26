@@ -1,0 +1,131 @@
+/* MDX Editor Custom Styles */
+
+.mdx-editor-wrapper .mdxeditor {
+  border: none;
+  width: 100%;
+  padding: 0;
+}
+
+.mdx-editor-wrapper .mdxeditor-toolbar {
+  background-color: var(--neutral-100, #f5f5f5);
+  border-bottom: 1px solid var(--neutral-200, #e5e5e5);
+  padding: 4px 8px;
+}
+
+.mdx-editor-wrapper .mdxeditor-toolbar-group button,
+.mdx-editor-wrapper .mdxeditor-toolbar-group select,
+.mdx-editor-wrapper .mdxeditor-toolbar-group .toolbar-toggle {
+  color: var(--neutral-600, #525252);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.mdx-editor-wrapper .mdxeditor-toolbar-group button:hover,
+.mdx-editor-wrapper .mdxeditor-toolbar-group select:hover {
+  background-color: var(--neutral-200, #e5e5e5);
+}
+
+.mdx-editor-wrapper .mdxeditor-toolbar-group button.toggled {
+  background-color: var(--primary-100, #dbeafe);
+  color: var(--primary-600, #2563eb);
+}
+
+.mdx-editor-wrapper .mdxeditor-content-editable {
+  min-height: 200px;
+  padding: 16px;
+  font-family: var(--font-sans);
+}
+
+/* Style for code blocks */
+.mdx-editor-wrapper .mdxeditor-code-block {
+  background-color: var(--neutral-900, #171717);
+  color: var(--neutral-100, #f5f5f5);
+  border-radius: 6px;
+  margin: 16px 0;
+}
+
+.mdx-editor-wrapper pre {
+  background-color: var(--neutral-800, #262626);
+  border-radius: 6px;
+  padding: 12px;
+  margin: 16px 0;
+  overflow-x: auto;
+}
+
+/* Style for links */
+.mdx-editor-wrapper a {
+  color: var(--primary-600, #2563eb);
+  text-decoration: underline;
+}
+
+/* Style for blockquotes */
+.mdx-editor-wrapper blockquote {
+  border-left: 4px solid var(--neutral-300, #d4d4d4);
+  padding-left: 16px;
+  margin: 16px 0;
+  color: var(--neutral-600, #525252);
+}
+
+/* Style for thematic breaks */
+.mdx-editor-wrapper hr {
+  border: none;
+  border-top: 2px solid var(--neutral-200, #e5e5e5);
+  margin: 24px 0;
+}
+
+/* Style for headings */
+.mdx-editor-wrapper h1 {
+  font-size: 24px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.mdx-editor-wrapper h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.mdx-editor-wrapper h3 {
+  font-size: 18px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* Dark mode support */
+.dark .mdx-editor-wrapper .mdxeditor-toolbar {
+  background-color: var(--neutral-800, #262626);
+  border-bottom: 1px solid var(--neutral-700, #404040);
+}
+
+.dark .mdx-editor-wrapper .mdxeditor-toolbar-group button,
+.dark .mdx-editor-wrapper .mdxeditor-toolbar-group select,
+.dark .mdx-editor-wrapper .mdxeditor-toolbar-group .toolbar-toggle {
+  color: var(--neutral-300, #d4d4d4);
+}
+
+.dark .mdx-editor-wrapper .mdxeditor-toolbar-group button:hover,
+.dark .mdx-editor-wrapper .mdxeditor-toolbar-group select:hover {
+  background-color: var(--neutral-700, #404040);
+}
+
+.dark .mdx-editor-wrapper .mdxeditor-toolbar-group button.toggled {
+  background-color: var(--primary-900, #1e3a8a);
+  color: var(--primary-300, #93c5fd);
+}
+
+.dark .mdx-editor-wrapper pre {
+  background-color: var(--neutral-900, #171717);
+}
+
+.dark .mdx-editor-wrapper blockquote {
+  border-left-color: var(--neutral-600, #525252);
+  color: var(--neutral-400, #a3a3a3);
+}
+
+.dark .mdx-editor-wrapper hr {
+  border-top-color: var(--neutral-700, #404040);
+} 
